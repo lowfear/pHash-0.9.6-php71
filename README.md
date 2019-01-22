@@ -76,8 +76,8 @@ $ make && sudo make install
 
 PHP 7.0-7.1:
 ```
-sudo echo "extension=pHash.so" | sudo tee /etc/php-zts.d/20-phash.ini
-php -m
+$ echo "extension=pHash.so" | sudo tee /etc/php.d/20-phash.ini
+$ php -m
 # you should see pHash in the list
 ```
 
