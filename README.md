@@ -4,6 +4,13 @@ pHash-0.9.6 was released at 2013-04-23, but there are serveral problems for cert
 
 Based on [hszcg's work](https://github.com/hszcg/pHash-0.9.6).
 
++ Fixes
+"For images with all pixels of the same RGB value..."
+https://github.com/nsant061/pHash/commit/0dd9d1dbcd3ac0488586d9a29a80540d5763e415
+
+"For new PNG..."
+https://github.com/charlizesmith/pHash-0.9.6-patches/commit/89979ba6da1566c92ea8fc256836aa258cc69ab8
+
 !Without Video Hash
 
 ## Installation
