@@ -40,14 +40,14 @@ $ cd mpg123-1.25.10
 $ ./configure
 $ make && make install
 
-cd ..
+$ cd ..
 
-wget https://github.com/lowfear/pHash-0.9.6/archive/master.zip
+$ wget https://github.com/lowfear/pHash-0.9.6/archive/master.zip
 
-unzip master.zip
-cd pHash-0.9.6-master/pHash-0.9.6/
-./configure --enable-video-hash=no LDFLAGS='-lpthread'
-make && make install
+$ unzip master.zip
+$ cd pHash-0.9.6-master/pHash-0.9.6/
+$ ./configure --enable-video-hash=no LDFLAGS='-lpthread'
+$ make && make install
 ```
 
 ```
