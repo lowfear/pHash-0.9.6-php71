@@ -50,10 +50,10 @@ $ make && make install
 
 $ cd ..
 
-$ wget https://github.com/lowfear/pHash-0.9.6/archive/master.zip
+$ wget https://github.com/lowfear/pHash-0.9.6-php71/archive/master.zip
 
 $ unzip master.zip
-$ cd pHash-0.9.6-master/pHash-0.9.6/
+$ cd pHash-0.9.6-php71-master/pHash-0.9.6/
 $ ./configure --enable-video-hash=no LDFLAGS='-lpthread'
 $ make && make install
 ```
