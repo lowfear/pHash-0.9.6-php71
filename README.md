@@ -12,8 +12,16 @@ Based on [hszcg's work](https://github.com/hszcg/pHash-0.9.6) for two patches:
 #### 1. pHash
 
 ```
-$ sudo apt-get install libavformat-dev libmpg123-dev libsamplerate-dev libsndfile-dev
-$ sudo apt-get install cimg-dev libavcodec-dev ffmpeg libswscale-dev
+$ yum install -y libsndfile-devel libtool-libs gcc gcc-c++ unzip 
+$ yum install ImageMagick ImageMagick-devel
+```
+
+If don't have PHP 7.1
+
+```
+$ yum install epel-release
+$ yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+$ yum --enablerepo=remi-php71 install php-cli php-devel php-xml php-soap php-xmlrpc php-mbstring php-json php-gd php-mcrypt
 ```
 
 ```
