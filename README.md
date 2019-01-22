@@ -4,6 +4,7 @@ pHash-0.9.6 was released at 2013-04-23, but there are serveral problems for cert
 
 Based on [hszcg's work](https://github.com/hszcg/pHash-0.9.6).
 
+!Without Video Hash
 
 ## Installation
 
