@@ -16,13 +16,6 @@ $ yum install -y libsndfile-devel libtool-libs gcc gcc-c++ unzip
 $ yum install ImageMagick ImageMagick-devel
 ```
 
-If don't have PHP 7.1
-
-```
-$ yum install epel-release
-$ yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-$ yum --enablerepo=remi-php71 install php-cli php-devel php-xml php-soap php-xmlrpc php-mbstring php-json php-gd php-mcrypt
-```
 
 ```
 $ cd pHash-0.9.6
@@ -31,6 +24,14 @@ $ make && sudo make install
 ```
 
 #### 2. PHP binding
+
+If don't have PHP 7.1
+
+```
+$ yum install epel-release
+$ yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+$ yum --enablerepo=remi-php71 install php-cli php-devel php-xml php-soap php-xmlrpc php-mbstring php-json php-gd php-mcrypt
+```
 
 ```
 $ cd bindings/php
