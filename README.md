@@ -12,10 +12,43 @@ Based on [hszcg's work](https://github.com/hszcg/pHash-0.9.6) for two patches:
 #### 1. pHash
 
 ```
-$ yum install -y libsndfile-devel libtool-libs gcc gcc-c++ unzip 
+$ yum install -y libsndfile-devel libtool-libs gcc gcc-c++ unzip wget
 $ yum install ImageMagick ImageMagick-devel
 ```
 
+```
+$ cd ~
+$ mkdir x
+$ cd x
+
+$ wget https://github.com/lowfear/pHash-0.9.6-php71/blob/master/libs/CImg_2.5.0_pre011819.zip
+$ wget https://github.com/lowfear/pHash-0.9.6-php71/blob/master/libs/libsamplerate-0.1.9.tar.gz
+$ wget https://github.com/lowfear/pHash-0.9.6-php71/blob/master/libs/mpg123-1.25.10.tar.bz2
+
+$ unzip CImg_2.5.0_pre011819.zip
+$ cp CImg*/CImg.h /usr/local/include
+
+$ tar xvf libsamplerate-0.1.9.tar.gz
+$ cd libsamplerate-0.1.9
+$ ./configure
+$ make && make install
+
+$ cd ..
+
+$ tar xvf mpg123-1.25.10.tar.bz2
+$ cd mpg123-1.25.10
+$ ./configure
+$ make && make install
+
+cd ..
+
+wget https://github.com/lowfear/pHash-0.9.6/archive/master.zip
+
+unzip master.zip
+cd pHash-0.9.6-master/pHash-0.9.6/
+./configure --enable-video-hash=no LDFLAGS='-lpthread'
+make && make install
+```
 
 ```
 $ cd pHash-0.9.6
@@ -42,7 +75,7 @@ $ make && sudo make install
 
 PHP 7.0-7.1:
 ```
-sudo echo "extension=pHash.so" | sudo tee /etc/php/7.0/mods-available/pHash.ini
+sudo echo "extension=pHash.so" | sudo tee /etc/php-zts.d/20-phash.ini
 php -m
 # you should see pHash in the list
 ```
